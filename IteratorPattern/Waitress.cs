@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace IteratorPattern
 {
@@ -18,6 +19,12 @@ namespace IteratorPattern
         private readonly IMenu _dinerMenu;
         private readonly IMenu _pancakeMenu;
         private readonly IMenu _cafeMenu;
+        private readonly List<IMenu> _menuList;
+
+        public Waitress(List<IMenu> menuList)
+        {
+            _menuList = menuList;
+        }
 
         public Waitress(IMenu dinerMenu, IMenu pancakeMenu, IMenu cafeMenu)
         {
@@ -39,6 +46,16 @@ namespace IteratorPattern
             IMenuIterator cafeIterator = _cafeMenu.CreateIterator();
             Console.WriteLine("\nCAFE");
             DisplayMenu(cafeIterator);
+        }
+
+        public void PrintMenu2()
+        {
+            foreach (var menu in _menuList)
+            {
+                IMenuIterator menuIterator = menu.CreateIterator();
+                DisplayMenu(menuIterator);
+                Console.WriteLine();
+            }
         }
 
         private void DisplayMenu(IMenuIterator menuIterator)
