@@ -1,11 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2036
+VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IteratorPattern", "IteratorPattern\IteratorPattern.csproj", "{D053DF0F-6030-4BC2-8FEB-326C2A722D37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IteratorPattern", "IteratorPattern\IteratorPattern.csproj", "{D053DF0F-6030-4BC2-8FEB-326C2A722D37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IteratorPatternClient", "IteratorPatternClient\IteratorPatternClient.csproj", "{DA68CB8F-3CB7-424C-8347-E0A4D1D894AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IteratorPatternClient", "IteratorPatternClient\IteratorPatternClient.csproj", "{DA68CB8F-3CB7-424C-8347-E0A4D1D894AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5B1FFFFD-BDB7-4341-89C7-4D2F708C9E72}"
+	ProjectSection(SolutionItems) = preProject
+		IteratorPattern.PNG = IteratorPattern.PNG
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
